@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Consumption Predictor — Smart Dashboard</title>
+    <meta name="description"
+        content="Analyze and predict your household spending with AI-powered insights, budget tracking, and anomaly detection.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ====== SIDEBAR ====== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="material-icons-round logo-icon">insights</span>
+                <div>
+                    <h2>HousePredict</h2>
+                    <span class="logo-subtitle">Smart Analytics</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <!-- Data Upload -->
+            <div class="nav-section">
+                <span class="nav-section-title">
+                    <span class="material-icons-round">cloud_upload</span>
+                    Data Source
+                </span>
+                <div class="nav-section-content">
+                    <label class="file-upload-label" for="csvFile" id="fileLabel">
+                        <span class="material-icons-round">attach_file</span>
+                        <span>Choose CSV File</span>
+                    </label>
+                    <input type="file" id="csvFile" accept=".csv" hidden>
+                    <button id="loadBtn" class="btn btn-primary">
+                        <span class="material-icons-round">play_arrow</span>
+                        Load Data
+                    </button>
+                </div>
+            </div>
+
+            <!-- Household Filter -->
+            <div class="nav-section">
+                <span class="nav-section-title">
+                    <span class="material-icons-round">filter_alt</span>
+                    Filter
+                </span>
+                <div class="nav-section-content">
+                    <label class="input-label" for="householdFilter">Household</label>
+                    <select id="householdFilter">
+                        <option value="all">All Households</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Budget -->
+            <div class="nav-section">
+                <span class="nav-section-title">
+                    <span class="material-icons-round">account_balance_wallet</span>
+                    Budget
+                </span>
+                <div class="nav-section-content">
+                    <label class="input-label" for="budgetInput">Monthly Budget (₹)</label>
+                    <input type="number" id="budgetInput" placeholder="e.g. 5000">
+                    <button id="budgetBtn" class="btn btn-secondary">
+                        <span class="material-icons-round">check_circle</span>
+                        Check Budget
+                    </button>
+                    <p id="warningMsg" class="warning-msg"></p>
+                </div>
+            </div>
+
+            <!-- Anomaly -->
+            <div class="nav-section">
+                <span class="nav-section-title">
+                    <span class="material-icons-round">warning_amber</span>
+                    Anomaly Sensitivity
+                </span>
+                <div class="nav-section-content">
+                    <div class="slider-container">
+                        <input type="range" id="thresholdSlider" min="1" max="3" step="0.1" value="2">
+                        <span class="slider-value" id="thresholdValue">2</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ====== MOBILE MENU TOGGLE ====== -->
+    <button class="mobile-toggle" id="mobileToggle">
+        <span class="material-icons-round">menu</span>
+    </button>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="page-header">
+            <div>
+                <h1>Household Consumption Predictor</h1>
+                <p class="header-subtitle">Analyze spending patterns, predict future costs, and detect anomalies in your
+                    household data.</p>
+            </div>
+        </header>
+
+        <!-- Summary Stat Cards -->
+        <section class="stats-row" id="statsRow">
+            <div class="stat-card">
+                <div class="stat-icon icon-blue">
+                    <span class="material-icons-round">payments</span>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Total Spending</span>
+                    <span class="stat-value">₹<span id="totalSpending">0</span></span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-purple">
+                    <span class="material-icons-round">trending_up</span>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Avg. Monthly</span>
+                    <span class="stat-value">₹<span id="avgSpending">0</span></span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-cyan">
+                    <span class="material-icons-round">auto_awesome</span>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Next Month Prediction</span>
+                    <span class="stat-value">₹<span id="prediction">0</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Grid -->
+        <section class="dashboard">
+
+            <!-- Spending Chart -->
+            <div class="card card-chart">
+                <div class="card-header">
+                    <span class="material-icons-round card-icon">show_chart</span>
+                    <h3>Monthly Spending Trend</h3>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="spendingChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Category Analysis -->
+            <div class="card card-category">
+                <div class="card-header">
+                    <span class="material-icons-round card-icon">donut_large</span>
+                    <h3>Category Analysis</h3>
+                </div>
+                <ul id="categoryList" class="analysis-list"></ul>
+            </div>
+
+            <!-- Top Items -->
+            <div class="card card-items">
+                <div class="card-header">
+                    <span class="material-icons-round card-icon">local_fire_department</span>
+                    <h3>Top 5 Popular Items</h3>
+                </div>
+                <ul id="itemList" class="analysis-list"></ul>
+            </div>
+
+            <!-- Anomaly Detection -->
+            <div class="card card-anomaly">
+                <div class="card-header">
+                    <span class="material-icons-round card-icon">radar</span>
+                    <h3>Anomaly Detection</h3>
+                </div>
+                <p id="anomalyText" class="anomaly-result">Upload data to see anomaly results.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ====== CHATBOT ====== -->
+    <!-- Floating Action Button -->
+    <button class="chatbot-fab" id="chatbotFab" aria-label="Open chatbot">
+        <span class="material-icons-round chatbot-fab-icon" id="fabIcon">smart_toy</span>
+        <span class="fab-pulse"></span>
+    </button>
+
+    <!-- Chat Panel -->
+    <div class="chatbot-panel" id="chatbotPanel">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <span class="material-icons-round chatbot-avatar">smart_toy</span>
+                <div>
+                    <h4>DataAssist</h4>
+                    <span class="chatbot-status">Online — Ask me about your data</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">
+                <span class="material-icons-round">close</span>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+            <!-- Welcome message injected by JS -->
+        </div>
+
+        <div class="chatbot-chips" id="chatbotChips">
+            <button class="chip" data-query="How to fix anomalies?">🔧 Fix Anomalies</button>
+            <button class="chip" data-query="Data quality tips">📊 Data Quality</button>
+            <button class="chip" data-query="Spending suggestions">💡 Suggestions</button>
+            <button class="chip" data-query="How to use this dashboard?">❓ Help</button>
+            <button class="chip" data-query="Which category should I reduce?">📊 Reduce Cost</button>
+            <button class="chip" data-query="Which item is trending up?">🔥 Trending Up</button>
+            <button class="chip" data-query="Predict spending for the next 6 months">📈 Predict 6 Months</button>
+            <button class="chip" data-query="Which household spends the most?">🏠 Top Spender</button>
+         
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbotInput" placeholder="Ask about anomalies, data fixes, tips…"
+                autocomplete="off">
+            <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
+                <span class="material-icons-round">send</span>
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

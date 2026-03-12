@@ -1,0 +1,201 @@
+Purchase_Date,Household_ID,Category,Item,Quantity,Price
+26.1.26,1001,Food Items,Snacks,9,634.78
+24.6.25,1019,Other Essentials,Toothpaste,17,947.74
+1.5.25,1018,Food Items,Pizza,12,936.03
+20.3.25,1002,Food Items,Biscuits,1,618.76
+6.7.25,1002,Food Items,Juice,8,806.62
+9.10.25,1012,Bills,WiFi,14,623.6
+20.2.26,1017,Grocery,Vegetables,9,937.73
+21.9.25,1011,Other Essentials,Medicine,11,663.67
+18.4.25,1004,Bills,Mobile Recharge,2,859.33
+19.3.25,1007,Bills,WiFi,11,394.02
+16.8.25,1008,Grocery,Flour,15,618.24
+24.3.25,1014,Food Items,Sweets,11,628.85
+12.2.26,1013,Other Essentials,Soap,17,321.58
+21.8.25,1015,Grocery,Milk,2,491.55
+13.5.25,1018,Bills,Mobile Recharge,10,711.03
+7.9.25,1003,Food Items,Biscuits,6,653.56
+9.1.26,1007,Bills,WiFi,19,813.41
+24.10.25,1019,Grocery,Vegetables,8,309.97
+16.4.25,1010,Other Essentials,Toothpaste,7,217.26
+6.8.25,1010,Food Items,Snacks,3,874.3
+25.5.25,1002,Other Essentials,Shampoo,12,654.42
+24.5.25,1017,Grocery,Eggs,9,479.46
+26.7.25,1010,Bills,Mobile Recharge,15,190.09
+23.2.26,1004,Grocery,Flour,20,377.65
+15.4.25,1013,Other Essentials,Soap,5,102.67
+7.9.25,1004,Bills,Water,20,650.22
+7.2.26,1015,Food Items,Burger,7,47.9
+26.11.25,1016,Food Items,Sweets,20,82.58
+4.7.25,1019,Bills,WiFi,16,480.68
+20.4.25,1010,Other Essentials,Toothpaste,3,428.91
+17.10.25,1008,Grocery,Vegetables,17,271.52
+22.10.25,1016,Food Items,Sweets,5,574.58
+31.5.25,1006,Other Essentials,Soap,19,372.62
+14.10.25,1005,Other Essentials,Detergent,12,667.11
+5.5.25,1019,Bills,Gas Cylinder,3,117.16
+22.8.25,1007,Other Essentials,Toothpaste,7,902.5
+31.10.25,1019,Other Essentials,Shampoo,12,337.96
+15.7.25,1013,Grocery,Flour,15,229.65
+24.7.25,1010,Grocery,Oil,19,918.03
+16.5.25,1019,Grocery,Rice,5,910.27
+19.5.25,1006,Other Essentials,Medicine,9,929.09
+2.12.25,1007,Food Items,Snacks,20,179.9
+29.6.25,1017,Food Items,Sweets,17,761.48
+26.7.25,1009,Bills,WiFi,20,642.32
+24.5.25,1018,Grocery,Oil,17,156.52
+6.1.26,1006,Food Items,Snacks,13,795.69
+11.9.25,1013,Other Essentials,Shampoo,9,26.54
+14.2.26,1013,Bills,WiFi,6,91.43
+25.7.25,1003,Bills,Water,8,689.63
+1.4.25,1011,Bills,Water,6,360.67
+2.1.26,1014,Grocery,Vegetables,2,654.38
+8.3.25,1009,Bills,Water,9,108.77
+12.11.25,1005,Bills,Water,9,714.74
+10.11.25,1020,Other Essentials,Soap,5,247.1
+13.9.25,1004,Grocery,Sugar,8,820.02
+1.6.25,1019,Grocery,Milk,11,340.34
+28.4.25,1020,Food Items,Juice,17,455.5
+21.12.25,1019,Grocery,Rice,8,849.8
+24.4.25,1002,Food Items,Biscuits,13,664.24
+3.6.25,1005,Other Essentials,Toothpaste,7,306.22
+6.7.25,1004,Food Items,Sweets,15,68.74
+3.6.25,1005,Bills,WiFi,11,157.88
+9.6.25,1008,Food Items,Pizza,8,844.64
+26.2.25,1005,Food Items,Burger,9,93.03
+29.6.25,1007,Grocery,Vegetables,8,249.42
+6.8.25,1016,Grocery,Sugar,1,126.05
+20.7.25,1001,Grocery,Vegetables,13,908.9
+23.2.26,1020,Bills,Electricity,6,448.87
+16.8.25,1004,Other Essentials,Shampoo,16,677.02
+20.1.26,1014,Food Items,Biscuits,5,750.43
+27.12.25,1007,Bills,Gas Cylinder,8,220.06
+2.11.25,1005,Grocery,Oil,11,270.25
+12.11.25,1018,Bills,Gas Cylinder,4,67.68
+20.6.25,1001,Grocery,Flour,10,618.63
+20.9.25,1020,Grocery,Eggs,19,117.93
+17.2.26,1003,Bills,Electricity,4,335.38
+12.10.25,1010,Grocery,Milk,13,69.11
+20.10.25,1018,Bills,Water,10,358.47
+4.5.25,1014,Bills,WiFi,1,57.79
+12.5.25,1010,Grocery,Vegetables,14,423.52
+30.1.26,1006,Food Items,Snacks,16,905.9
+16.3.25,1013,Food Items,Snacks,4,74.62
+21.5.25,1016,Food Items,Snacks,3,205.36
+1.12.25,1011,Other Essentials,Detergent,20,933.23
+13.6.25,1005,Other Essentials,Toothpaste,2,752.51
+24.7.25,1003,Grocery,Milk,13,103.52
+18.12.25,1006,Grocery,Eggs,8,994.04
+26.6.25,1009,Food Items,Pizza,3,965.52
+18.12.25,1009,Food Items,Snacks,5,657.96
+3.9.25,1019,Bills,Water,2,726.42
+25.4.25,1006,Grocery,Milk,18,265.56
+13.10.25,1013,Grocery,Sugar,6,261.66
+1.1.26,1005,Other Essentials,Soap,4,875.75
+30.5.25,1010,Other Essentials,Medicine,18,997.78
+17.7.25,1013,Other Essentials,Toothpaste,19,945.86
+28.9.25,1001,Grocery,Rice,9,780.07
+10.12.25,1013,Bills,WiFi,6,134.31
+24.5.25,1009,Bills,Water,15,436.28
+2.9.25,1008,Grocery,Oil,6,141.23
+5.6.25,1013,Food Items,Biscuits,4,630.43
+15.3.25,1018,Other Essentials,Soap,3,877.44
+1.1.26,1001,Grocery,Rice,19,508.97
+27.1.26,1006,Other Essentials,Shampoo,5,765.73
+29.6.25,1011,Food Items,Sweets,13,511.81
+18.4.25,1015,Food Items,Biscuits,4,848.58
+16.9.25,1011,Grocery,Sugar,12,975.9
+23.5.25,1008,Bills,WiFi,8,591.42
+30.9.25,1015,Grocery,Eggs,8,32.54
+19.10.25,1013,Other Essentials,Toothpaste,10,15.93
+23.2.26,1016,Grocery,Rice,5,535.11
+7.1.26,1001,Bills,Water,8,690.61
+21.4.25,1017,Grocery,Oil,9,705.8
+2.10.25,1001,Food Items,Pizza,18,77.29
+4.7.25,1019,Bills,Gas Cylinder,6,366.07
+27.9.25,1013,Other Essentials,Soap,12,264.7
+16.1.26,1010,Grocery,Sugar,14,156.84
+3.5.25,1013,Bills,Electricity,15,637.64
+9.9.25,1003,Other Essentials,Detergent,18,34.19
+29.1.26,1015,Grocery,Flour,4,876.2
+8.5.25,1016,Bills,Mobile Recharge,19,676.44
+28.9.25,1014,Bills,WiFi,14,239.19
+28.1.26,1017,Food Items,Sweets,20,307.54
+30.3.25,1006,Food Items,Biscuits,15,412.99
+24.2.26,1014,Food Items,Biscuits,12,664.83
+14.12.25,1003,Food Items,Burger,8,343.27
+26.3.25,1010,Grocery,Eggs,4,543.35
+13.5.25,1004,Grocery,Oil,14,106.92
+16.9.25,1010,Grocery,Eggs,2,413.69
+11.9.25,1012,Grocery,Milk,2,948.7
+4.5.25,1009,Food Items,Pizza,4,513.71
+14.8.25,1002,Bills,Mobile Recharge,12,883.51
+9.7.25,1014,Other Essentials,Medicine,2,766.55
+4.9.25,1002,Food Items,Burger,13,430.34
+13.10.25,1009,Food Items,Biscuits,8,791.4
+13.6.25,1006,Other Essentials,Detergent,2,564.88
+2.12.25,1006,Food Items,Juice,12,509.84
+13.11.25,1007,Bills,Gas Cylinder,11,433.66
+30.12.25,1002,Food Items,Snacks,8,184.83
+8.3.25,1013,Grocery,Oil,16,158.5
+22.6.25,1006,Bills,Electricity,8,159.93
+8.7.25,1017,Bills,Electricity,8,369.92
+29.7.25,1008,Other Essentials,Shampoo,8,357.93
+8.3.25,1013,Bills,Gas Cylinder,9,726.55
+19.10.25,1015,Other Essentials,Detergent,8,315.24
+11.1.26,1006,Bills,Electricity,8,605.28
+9.5.25,1015,Other Essentials,Soap,17,505.4
+25.1.26,1020,Other Essentials,Detergent,9,580.1
+6.8.25,1011,Other Essentials,Toothpaste,14,708.56
+22.5.25,1017,Bills,Gas Cylinder,16,376.51
+30.3.25,1020,Other Essentials,Toothpaste,17,514.05
+5.11.25,1007,Food Items,Burger,12,232.27
+9.7.25,1014,Bills,Electricity,18,289.36
+5.12.25,1020,Grocery,Milk,6,74.48
+1.6.25,1020,Grocery,Oil,8,940.71
+19.7.25,1015,Food Items,Pizza,9,828.72
+26.2.25,1003,Grocery,Vegetables,5,730.4
+16.4.25,1007,Bills,WiFi,20,892.36
+1.5.25,1005,Bills,WiFi,9,272.14
+26.5.25,1002,Food Items,Burger,20,925.63
+24.11.25,1004,Food Items,Juice,17,387.24
+24.9.25,1002,Grocery,Oil,16,778.39
+2.5.25,1010,Bills,Electricity,6,355.85
+14.6.25,1018,Bills,WiFi,11,93.11
+23.12.25,1020,Food Items,Snacks,16,419.82
+19.12.25,1018,Food Items,Pizza,15,690.07
+16.4.25,1014,Other Essentials,Shampoo,9,312.44
+18.1.26,1008,Food Items,Juice,12,708.49
+21.6.25,1019,Bills,Mobile Recharge,20,794.25
+24.4.25,1014,Other Essentials,Soap,5,190.2
+11.8.25,1010,Other Essentials,Medicine,9,94.37
+24.8.25,1014,Bills,Gas Cylinder,2,44.7
+20.3.25,1005,Grocery,Oil,6,629.87
+30.1.26,1009,Grocery,Sugar,9,501.77
+24.3.25,1014,Bills,Electricity,18,513.52
+20.8.25,1015,Food Items,Burger,7,968.77
+15.1.26,1013,Grocery,Oil,19,195.15
+3.8.25,1001,Bills,WiFi,19,99.25
+17.12.25,1017,Food Items,Biscuits,9,925.93
+31.3.25,1003,Bills,Gas Cylinder,3,590.5
+22.4.25,1004,Food Items,Pizza,5,677.17
+18.4.25,1015,Bills,Gas Cylinder,1,962.09
+27.6.25,1006,Other Essentials,Detergent,4,165.71
+4.1.26,1019,Other Essentials,Detergent,20,902.47
+10.6.25,1014,Grocery,Eggs,14,565.24
+1.5.25,1019,Grocery,Vegetables,6,469.79
+22.12.25,1008,Bills,Gas Cylinder,19,323.56
+26.1.26,1015,Other Essentials,Detergent,3,40.6
+9.3.25,1016,Grocery,Vegetables,10,203.86
+3.12.25,1014,Grocery,Rice,9,749.75
+20.11.25,1003,Grocery,Milk,4,400.61
+13.11.25,1004,Grocery,Milk,12,807.76
+20.7.25,1006,Food Items,Biscuits,3,525.13
+11.10.25,1010,Grocery,Oil,16,194.54
+6.10.25,1012,Bills,Water,2,764.65
+30.5.25,1003,Other Essentials,Detergent,18,40.78
+28.8.25,1012,Food Items,Burger,12,466.37
+5.8.25,1015,Food Items,Burger,14,468.23
+15.10.25,1007,Grocery,Milk,8,393.64
+8.1.26,1011,Grocery,Eggs,10,807.59
+4.10.25,1009,Food Items,Burger,15,684.06
